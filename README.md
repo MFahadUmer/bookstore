@@ -6,7 +6,7 @@
 
 > This project was bootstrapped with Create React App. We developed a bookstore application for a fictional company using Redux and React where users can track their reading progress from the bookstore. 
 
-# [Live Preview]()
+# [Live Preview](https://redux-bookstore-7897.herokuapp.com/)
 
 ### Run Application
 - `git clone https://github.com/MFahadUmer/React-Redux-Bookstore.git` 
