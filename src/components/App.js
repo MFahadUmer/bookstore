@@ -1,7 +1,7 @@
 import React from 'react';
 
 const App = () => (
-  <div>
+  <div className="name">
     <h2>React Redux Bookstore</h2>
   </div>
 );
