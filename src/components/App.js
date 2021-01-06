@@ -1,8 +1,9 @@
 import React from 'react';
+import BooksList from './BooksList';
 
 const App = () => (
   <div className="name">
-    <h2>React Redux Bookstore</h2>
+    <BooksList />
   </div>
 );
 
