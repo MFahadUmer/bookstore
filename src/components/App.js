@@ -6,7 +6,7 @@ import store from '../reducers';
 
 const App = () => (
   <Provider store={store}>
-    <div className="name">
+    <div className="app">
       <BooksList />
       <BooksForm />
     </div>

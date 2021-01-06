@@ -1,10 +1,15 @@
 import React from 'react';
 
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+const CATEGORIES = ['Select Category', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 const BooksForm = () => (
   <div>
     <form>
       <input type="text" placeholder="Book title" />
+      <select name="categories" id="categories">
+        {CATEGORIES.map(value => (
+          <option key={value} value={value}>{value}</option>
+        ))}
+      </select>
       <input type="submit" value="Add Book" />
     </form>
   </div>
