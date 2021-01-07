@@ -1,5 +1,7 @@
-.name {
-  width: 100%;
-  display: flex;
+.app {
+  margin: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
+  grid-row-gap: 50px;
 }
