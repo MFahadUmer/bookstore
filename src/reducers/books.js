@@ -25,7 +25,7 @@ const books = (state = booksInitialState, action) => {
       books: [
         ...state.books,
         {
-          bookId: (state.books.length > 0) ? state.books.length + 1 : 1,
+          bookId: (state.books.length > 1) ? state.books[state.books.length - 1].bookId + 1 : 1,
           bookTitle: action.payload.bookTitle,
           bookCategory: action.payload.bookCategory,
         },
