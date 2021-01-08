@@ -8,11 +8,7 @@ export const createBook = ({ title, category }) => ({
   },
 });
 
-export const removeBook = bookId => {
-  console.log(bookId);
-  return (
-    {
-      type: REMOVE_BOOK,
-      payload: bookId,
-    });
-};
+export const removeBook = bookId => ({
+  type: REMOVE_BOOK,
+  payload: bookId,
+});
