@@ -16,10 +16,11 @@ const BooksForm = () => {
   const handleClick = e => {
     e.preventDefault();
     dispatch(createBook({ title, category }));
+    document.getElementById('form').reset();
   };
   return (
     <div>
-      <form>
+      <form id="form">
         <input type="text" name="title" placeholder="Book title" onChange={handleChange} />
         <select name="category" id="categories" onChange={handleChange}>
           <option value="">Select Category</option>
