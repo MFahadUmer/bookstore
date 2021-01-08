@@ -18,6 +18,8 @@ const booksInitialState = {
 const books = (state = booksInitialState, action) => {
   switch (action.type) {
     case REMOVE_BOOK: return {
+      ...state,
+      books: state.books.filter(x => x.bookId !== action.payload),
     };
     case CREATE_BOOK: return {
       books: [
