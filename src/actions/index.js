@@ -1,17 +1,14 @@
 import { CREATE_BOOK, REMOVE_BOOK } from './booksActionTypes';
 
-const createBook = book => ({
+export const createBook = ({ title, category }) => ({
   type: CREATE_BOOK,
-  bookId: book.bookId,
-  bookTitle: book.bookTitle,
-  bookCategory: book.bookCategory,
+  payload: {
+    bookTitle: title,
+    bookCategory: category,
+  },
 });
 
-const removeBook = book => ({
+export const removeBook = bookId => ({
   type: REMOVE_BOOK,
-  bookId: book.bookId,
-  bookTitle: book.bookTitle,
-  bookCategory: book.bookCategory,
+  payload: bookId,
 });
-
-export default { createBook, removeBook };
