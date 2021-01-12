@@ -5,3 +5,7 @@
   justify-content: center;
   grid-row-gap: 50px;
 }
+
+.booklist {
+  display: flex;
+}
