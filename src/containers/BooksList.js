@@ -1,28 +1,44 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBook } from '../actions';
+import { removeBook, changeFilter } from '../actions';
+import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books, removeBook }) => (
-  <div>
-    <table border="1px">
-      <thead>
-        <tr>
-          <th>Book Id</th>
-          <th>Title</th>
-          <th>Category</th>
-          <th>Operations</th>
-        </tr>
-      </thead>
-      <tbody>
-        {books.map(value => (
-          <Book key={value.bookId} book={value} removeBook={removeBook} />
-        ))}
-      </tbody>
-    </table>
-  </div>
-);
+const BooksList = ({ books, removeBook, filterValue }) => {
+  const dispatch = useDispatch();
+  let filteredBooks = '';
+  const handleFilterChange = value => {
+    dispatch(changeFilter(value));
+  };
+  if (filterValue === 'All' || '') {
+    filteredBooks = books.map(value => (
+      <Book key={value.bookId} book={value} removeBook={removeBook} />
+    ));
+  } else {
+    filteredBooks = books.filter(books => books.bookCategory === filterValue).map(value => (
+      <Book key={value.bookId} book={value} removeBook={removeBook} />
+    ));
+  }
+  return (
+    <div className="booklist">
+      <table border="1px">
+        <thead>
+          <tr>
+            <th>Book Id</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredBooks}
+        </tbody>
+      </table>
+      <CategoryFilter handleFilterChange={handleFilterChange} />
+    </div>
+  );
+};
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(
@@ -33,15 +49,18 @@ BooksList.propTypes = {
     }),
   ),
   removeBook: PropTypes.func,
+  filterValue: PropTypes.string,
 };
 
 BooksList.defaultProps = {
   books: [],
   removeBook: '',
+  filterValue: '',
 };
 
 const mapStateToProps = state => ({
-  books: state.books,
+  books: state.book.books,
+  filterValue: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({
