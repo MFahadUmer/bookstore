@@ -13,6 +13,7 @@ export const removeBook = bookId => ({
   payload: bookId,
 });
 
-export const changeFilter = () => ({
+export const changeFilter = value => ({
   type: CHANGE_FILTER,
+  payload: value,
 });

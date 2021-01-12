@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const CategoryFilter = ({ handleFilterChange }) => {
   const CATEGORIES = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
@@ -12,6 +12,14 @@ const CategoryFilter = ({ handleFilterChange }) => {
       </select>
     </div>
   );
+};
+
+CategoryFilter.propTypes = {
+  handleFilterChange: PropTypes.func,
+};
+
+CategoryFilter.defaultProps = {
+  handleFilterChange: '',
 };
 
 export default CategoryFilter;
