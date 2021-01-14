@@ -1,0 +1,16 @@
+.categoryFilter {
+  width: 150px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 13px;
+  color: #121212;
+  opacity: 50%;
+}
+
+.categoryFilterOptions {
+  opacity: 50%;
+  color: #121212;
+  font-size: 13px;
+}

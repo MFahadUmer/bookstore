@@ -19,13 +19,16 @@
 }
 
 .logo {
-  /*font-family: Montserrat-Bold;*/
+  font-family: Montserrat;
   font-size: 30px;
   color: #0290ff;
   text-decoration: none;
   font-weight: bold;
+  margin-right: 50px;
 }
 
 .books {
   font-size: 13px;
+  font-family: Montserrat;
+  margin-right: 50px;
 }
