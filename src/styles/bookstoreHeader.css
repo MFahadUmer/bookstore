@@ -1,0 +1,30 @@
+.headerMainContainer {
+  background-color: #fff;
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.headerInternalContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLinksSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  color: #0290ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.books {
+  font-size: 13px;
+}
