@@ -1,5 +1,7 @@
 @import url(cssReset.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url(App.css);
 @import url(bookstoreHeader.css);
 @import url(categoryFilter.css);
+@import url(book.css);
