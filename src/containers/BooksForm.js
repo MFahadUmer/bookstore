@@ -19,17 +19,24 @@ const BooksForm = () => {
     document.getElementById('form').reset();
   };
   return (
-    <div>
-      <form id="form">
-        <input type="text" name="title" placeholder="Book title" onChange={handleChange} />
-        <select name="category" id="categories" onChange={handleChange}>
-          <option value="">Select Category</option>
-          {CATEGORIES.map(value => (
-            <option key={value} value={value}>{value}</option>
-          ))}
-        </select>
-        <input type="submit" value="Add Book" onClick={handleClick} />
-      </form>
+    <div className="formMainContainer">
+      <div className="formContainer">
+        <div>
+          <p className="addNewBook">ADD NEW BOOK</p>
+        </div>
+        <div>
+          <form className="bookForm" id="form">
+            <input type="text" name="title" className="addNewBookTitle" placeholder="Book title" onChange={handleChange} />
+            <select name="category" id="categories" className="addNewBookCategory" onChange={handleChange}>
+              <option value="">Select Category</option>
+              {CATEGORIES.map(value => (
+                <option key={value} value={value}>{value}</option>
+              ))}
+            </select>
+            <input className="addNewBookButton" type="submit" value="ADD BOOK" onClick={handleClick} />
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
