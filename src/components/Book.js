@@ -23,10 +23,22 @@ const Book = ({ book, removeBook }) => (
         </div>
       </div>
       <div className="bookReadGraph">
-        graph
+        <div className="oval-2" />
+        <div className="graphTextContainer">
+          <p className="graphText">
+            64%
+          </p>
+          <p className="graphTextCompleted">
+            Completed
+          </p>
+        </div>
+      </div>
+      <div className="bookGraphSeparator">
+        |
       </div>
       <div className="bookReadUpdate">
-        update Books Read Status
+        <p className="currentChapter">CURRENT CHAPTER</p>
+        <p className="chapterName">Chapter 17</p>
       </div>
     </div>
   </div>
