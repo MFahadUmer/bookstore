@@ -20,7 +20,7 @@
 }
 
 .bookCategory {
-  font-family: Montserrat;
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 14px;
   margin: 10px 0;
@@ -29,7 +29,7 @@
 }
 
 .bookTitle {
-  font-family: "Roboto Bold";
+  font-family: "Roboto Bold", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 22px;
   font-weight: bold;
   padding: 5px 0;
@@ -38,7 +38,7 @@
 .actionsOnBook {
   border: none;
   background-color: white;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 14px;
   color: #0290ff;
   cursor: pointer;
@@ -46,7 +46,7 @@
 }
 
 .bookAuthor {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 14px;
   color: #0290ff;
   margin-bottom: 10px;
@@ -70,13 +70,13 @@
 }
 
 .graphTextCompleted {
-  font-family: Montserrat;
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 14px;
   color: #b6b6b6;
 }
 
 .currentChapter {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 13px;
   color: #121212;
   opacity: 50%;
@@ -84,7 +84,7 @@
 }
 
 .chapterName {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   color: #121212;
   font-weight: bold;
@@ -98,7 +98,7 @@
 }
 
 .graphText {
-  font-family: Montserrat;
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 32px;
   font-weight: 500;
 }
@@ -117,7 +117,7 @@
 
 .updateProgress {
   margin-top: 20px;
-  color: #ffffff;
+  color: #fff;
   background-color: #0290ff;
   border: none;
   padding: 15px 30px;
