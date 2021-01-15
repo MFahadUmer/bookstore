@@ -39,6 +39,7 @@ const Book = ({ book, removeBook }) => (
       <div className="bookReadUpdate">
         <p className="currentChapter">CURRENT CHAPTER</p>
         <p className="chapterName">Chapter 17</p>
+        <button type="submit" className="updateProgress">UPDATE PROGRESS</button>
       </div>
     </div>
   </div>
