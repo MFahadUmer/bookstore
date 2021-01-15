@@ -17,7 +17,9 @@ const BookstoreHeader = () => {
           <CategoryFilter handleFilterChange={handleFilterChange} />
         </div>
         <div className="headerProfile">
-          <p>Profile</p>
+          <p>
+            <i className="fas fa-user" />
+          </p>
         </div>
       </div>
     </div>
