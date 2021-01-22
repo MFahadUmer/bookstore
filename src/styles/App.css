@@ -1,11 +1,14 @@
 .app {
-  margin: 50px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  grid-row-gap: 50px;
+  background-color: #fafafa;
+  height: 100vh;
+  width: 100%;
 }
 
-.booklist {
-  display: flex;
+.horizontalLine {
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #121212;
+  opacity: 50%;
+  margin: 35px auto;
 }

@@ -1,0 +1,57 @@
+.formMainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  width: 80%;
+}
+
+.bookForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addNewBook {
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 18px;
+}
+
+.addNewBookTitle {
+  width: 664px;
+  height: 45px;
+}
+
+.addNewBookCategory {
+  width: 285px;
+  height: 45px;
+  margin: 0 40px;
+}
+
+.addNewBookCategory,
+.addNewBookTitle {
+  border-radius: 5px;
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #121212;
+  opacity: 50%;
+  outline: none;
+  padding: 0 10px;
+}
+
+.addNewBookButton {
+  height: 45px;
+  background-color: #0290ff;
+  color: #fff;
+  padding: 0 75px;
+  font-family: "Roboto Slab", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: lighter;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

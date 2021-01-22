@@ -5,9 +5,9 @@ const CategoryFilter = ({ handleFilterChange }) => {
   const CATEGORIES = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div>
-      <select name="filter" onChange={e => handleFilterChange(e.target.value)}>
+      <select className="categoryFilter" name="filter" onChange={e => handleFilterChange(e.target.value)}>
         {CATEGORIES.map(value => (
-          <option key={value} value={value}>{value}</option>
+          <option key={value} className="categoryFilterOptions" value={value}>{value}</option>
         ))}
       </select>
     </div>

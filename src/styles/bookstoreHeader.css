@@ -1,0 +1,51 @@
+.headerMainContainer {
+  background-color: #fff;
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.headerInternalContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLinksSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #0290ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.books {
+  font-size: 13px;
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.headerProfile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #b6b6b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #0290ff -2px 2px;
+}
+
+.fa-user {
+  color: #0290ff;
+  font-size: 20px;
+}

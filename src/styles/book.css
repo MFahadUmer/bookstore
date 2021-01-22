@@ -1,0 +1,126 @@
+.booksMainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.booksMainContainer:first-child {
+  margin-top: 37px;
+}
+
+.booksContainer {
+  border-radius: 5px;
+  width: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.bookCategory {
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #121212;
+  opacity: 50%;
+}
+
+.bookTitle {
+  font-family: "Roboto Bold", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.actionsOnBook {
+  border: none;
+  background-color: white;
+  font-family: 'Roboto Slab', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #0290ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bookAuthor {
+  font-family: 'Roboto Slab', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #0290ff;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.separator {
+  padding: 0 15px;
+  color: #e8e8e8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bookReadGraph {
+  display: flex;
+  align-items: center;
+}
+
+.graphTextContainer {
+  margin-left: 15px;
+}
+
+.graphTextCompleted {
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #b6b6b6;
+}
+
+.currentChapter {
+  font-family: "Roboto Slab", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 13px;
+  color: #121212;
+  opacity: 50%;
+  font-weight: bold;
+}
+
+.chapterName {
+  font-family: "Roboto Slab", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #121212;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.bookGraphSeparator {
+  font-size: 100px;
+  color: #b6b6b6;
+  opacity: 50%;
+}
+
+.graphText {
+  font-family: Montserrat, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.oval-2 {
+  width: 68px;
+  height: 68px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 50%;
+  border-bottom-color: #0290ff;
+  border-top-color: #0290ff;
+  border-right-color: #0290ff;
+  border-left-color: #b6b6b6;
+}
+
+.updateProgress {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #0290ff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
